@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steuerberater</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+     <!-- Navigationsbar -->
+     <nav>
+        <!-- Sidebar -->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                    viewBox="0 -960 960 960" width="26px" fill="black">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <li><a href="#">Logo<span class="highlight">.</span></a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Aktuelles</a></li>
+            <li><a href="#">Dokumente</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Logo<span class="highlight">.</span></a></li>
+            <li class="hideOnMobile"><a href="#">Über uns</a></li>
+            <li class="hideOnMobile"><a href="#">Aktuelles</a></li>
+            <li class="hideOnMobile"><a href="#">Dokumente</a></li>
+
+            <!-- MenuButton -->
+            <li class="menu-button" onclick=showSidebar()>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                    viewBox="0 -960 960 960" width="26px" fill="black">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+     <!-- Herosection -->
+    <section id="hero">
+        <h1>XXX<br/>Steuerberatungsgesellschaft</h1>
+        <p class="description">
+            "Maßgeschneiderte Steuerlösungen und umfassende Beratung – Ihre Erfolgsstrategie für steuerliche Optimierung und finanzielle Sicherheit."
+        </p>
+        <div class="btns">
+            <button class="btn contact-btn">Kontaktiern Sie uns</button>
+            <button class="btn more-btn">Mehr erfahren</button>
+        </div>
+        <img class="hero-img" src="hero-img.jpg" alt="Calculations Image"/>
+    </section>
+
+    <!-- Adresse und Öffnungszeiten -->
+    <section id="data">
+        <div class="data-half adress">
+            <h3>Unser Firmensitz</h3>
+            <p> <b>Mustermanns Steuerberatungsgesellschaft</b>
+                <br /><br />
+                <a class="highlight link">Musterstr. 1</a><br /> 00000 Berlin
+                <br /><br />Tel.: 
+                <a class="highlight link">xxxxxxxxxxx</a> <br /> Fax: xxxxxxxxx</p>
+        </div>
+
+        <div class="data-half times">
+            <h3>Unsere Servicezeiten</h3>
+            <table class="opening-times">
+                <tr>
+                    <th>Montag</th>
+                    <td>08:00 - 12:30 <br /> 13:30 - 17:00</td>
+                </tr>
+                <tr>
+                    <th>Dienstag</th>
+                    <td>08:00 - 12:30 <br /> 13:30 - 17:00</td>
+                </tr>
+                <tr>
+                    <th>Mittwoch</th>
+                    <td>08:00 - 12:30 <br /> 13:30 - 17:00</td>
+                </tr>
+                <tr>
+                    <th>Donnerstag</th>
+                    <td>08:00 - 12:30 <br /> 13:30 - 17:00</td>
+                </tr>
+                <tr>
+                    <th>Freitag</th>
+                    <td>08:00 - 12:30</td>
+                </tr>
+            </table>
+        </div>
+     </section>
+
+    <!-- Slideshow -->
+    <section id="slide-section">
+        <div class="slide-btn" onclick=slideBack()>
+            <svg class="first-slide-btn"
+            xmlns="http://www.w3.org/2000/svg"height="45px"
+            viewBox="0 -960 960 960" width="45px" fill="white">
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        </div>
+
+        <div class="slideshow">
+            <img class="slide slide1" src="Slide1.jpg"/>
+            <img class="slide slide2" src="Slide2.jpg"/>
+            <img class="slide slide3" src="Slide3.jpg"/>
+        </div>
+
+        <div class="slide-btn" onclick=slideForward()>
+            <svg xmlns="http://www.w3.org/2000/svg" height="45px"
+            viewBox="0 -960 960 960" width="45px" fill="white">
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        </div>
+    </section>
+
+    <section id="service-section">
+        <h2>Unsere Leistungen</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Steuerberatung</h3>
+                <ul>
+                    <li>Steuerberatung und -planung</li>
+                    <li>Erstellung von Steuererklärungen</li>
+                    <li>Vertretung gegenüber Finanzbehörden</li>
+                    <li>Prüfung von Steuerbescheiden</li>
+                    <li>Rechtsformwahl</li>
+                    <li>Erben & Schenken</li>
+                    <li>Betriebsprüfung</li>
+                    <li>Hilfe in der Krise</li>
+                </ul>
+            </div>
+            
+            <div class="service">
+                <h3>Finanz- &amp; Lohnbuchhaltung</h3>
+                <ul>
+                    <li>Finanzbuchhaltung mit Kontierung</li>
+                    <li>Lohn- und Gehaltsabrechnung</li>
+                    <li>Buchführung</li>
+                    <li>Kontenabstimmungen</li>
+                    <li>Beratung bei Softwarewahl</li>
+                </ul>
+            </div>
+            
+            <div class="service">
+                <h3>Steuern &amp; Jahresabschlüsse</h3>
+                <ul>
+                    <li>Steueroptimierung</li>
+                    <li>Erstellung von Jahresabschlüssen</li>
+                    <li>Handels- und Steuerbilanzen</li>
+                    <li>Bilanzerstellung</li>
+                    <li>Analyse und Beratung zur Unternehmensentwicklung</li>
+                    <li>Gewinnermittlung</li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top: 1rem; text-align: end;">...und mehr!</p>
+    </section>
+
+
+    <footer>
+        <ul>
+          <li><a>AGB</a></li>
+          <li><a>Datenschutz</a></li>
+          <li><a>Impressum</a></li>
+        </ul>
+        <p>Copyright XXX</p>
+      </footer>
+
+    <!-- Skript -->
+    <script>
+        // Sidebar
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+
+        
+        // Slideshow
+        function slideBack() {
+            const slide1 = document.querySelector(".slide1");
+            const slide2 = document.querySelector(".slide2");
+            const slide3 = document.querySelector(".slide3");
+
+            if(getComputedStyle(slide3).display == "block") {
+                slide3.style.display = "none";
+                slide2.style.display = "block";
+            }
+            else if(getComputedStyle(slide2).display == "block") {
+                slide2.style.display = "none";
+                slide1.style.display = "block";
+            }
+            else if(getComputedStyle(slide1).display == "block") {
+                slide1.style.display = "none";
+                slide3.style.display = "block";
+            }
+        }
+
+        function slideForward() {
+            const slide1 = document.querySelector(".slide1");
+            const slide2 = document.querySelector(".slide2");
+            const slide3 = document.querySelector(".slide3");
+
+            if(getComputedStyle(slide1).display == "block") {
+                slide1.style.display = "none";
+                slide2.style.display = "block";
+            }
+            else if(getComputedStyle(slide2).display == "block") {
+                slide2.style.display = "none";
+                slide3.style.display = "block";
+            }
+            else if(getComputedStyle(slide3).display == "block") {
+                slide3.style.display = "none";
+                slide1.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
